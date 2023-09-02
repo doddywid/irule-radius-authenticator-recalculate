@@ -3,7 +3,7 @@
 ############################################################################################################
     
     #set required var to calculate new request authenticator
-    set secret "telkomsel"
+    set secret "mynewsecret"
     set payload [UDP::payload]
     
     #calculate new request authenticator and update UDP payload
