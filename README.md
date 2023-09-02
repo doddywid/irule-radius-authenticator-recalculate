@@ -10,5 +10,6 @@ The recalculation needed when radius accounting modification is performed. This 
 
 The logic used to recalculate the Authenticator value are
 - concatenate Radius Code+ID+Length+16zero octets+avps+secret in binary format
+- the avps is all the payload data after Authenticator
 - perform md5 hash to the concatenated above
 - replace the old Authenticator with the new hash
